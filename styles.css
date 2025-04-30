@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* styles.css */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,6 @@ body {
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -49,4 +48,43 @@ body {
 .grid-item p {
     font-size: 16px;
     color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.exercise {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
 }
