@@ -1,9 +1,9 @@
+<!-- flashcard1.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thẻ Flashcard - Từ vựng bài 1</title>
+    <title>Thẻ Flashcard - Bài tập 1</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,22 +11,21 @@
         <a href="javascript:history.back()">
             <button>⬅ Quay lại</button>
         </a>
-        <h1>Thẻ Flashcard - Từ vựng bài 1</h1>
-    </。其中</header>
+        <h1>Thẻ Flashcard - Bài tập 1</h1>
+    </header>
 
     <div class="flashcard-container">
         <!-- Thẻ Flashcard 1 -->
         <div class="flashcard">
             <div class="card">
                 <div class="front">
-                    <img src="images/phann1.png" alt="Con mèo">
-                    <p>Con mèo</p>
+                    <img src="cat.png" alt="Hình ảnh">
+                    <p>Câu tiếng Việt: Con mèo đang nằm trên ghế.</p>
                 </div>
                 <div class="back">
-                    <p>猫</p>
-                    <p>ねこ</p>
-                    <p>猫は椅子の上で寝ています。</p>
-                    <p>Con mèo đang nằm trên ghế.</p>
+                    <p>Hán tự: 猫 (mèo)</p>
+                    <p>Hiragana: ねこ (neko)</p>
+                    <p>Câu ví dụ: 猫は椅子の上で寝ています。(Con mèo đang nằm trên ghế.)</p>
                 </div>
             </div>
         </div>
@@ -35,7 +34,7 @@
         <div class="flashcard">
             <div class="card">
                 <div class="front">
-                    <img src="images/girl_reading.png" alt="Cô gái đang đọc sách">
+                    <img src="images/vietnamese_image2.jpg" alt="Hình ảnh">
                     <p>Câu tiếng Việt: Cô gái đang đọc sách.</p>
                 </div>
                 <div class="back">
@@ -49,16 +48,5 @@
         <!-- Tiếp tục thêm 58 thẻ Flashcard khác... -->
 
     </div>
-<script>
-    // Xóa script bảo mật không cần thiết
-    document.querySelectorAll('.flashcard').forEach(card => {
-        card.addEventListener('click', () => {
-            card.querySelector('.card').style.transform = 
-                card.querySelector('.card').style.transform === 'rotateY(180deg)' 
-                ? 'rotateY(0deg)' 
-                : 'rotateY(180deg)';
-        });
-    });
-</script>
 </body>
 </html>
