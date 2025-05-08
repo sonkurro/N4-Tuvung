@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Tiếng Nhật</title>
+    <link rel="stylesheet" href="styles (1).css">
+</head>
+<body>
+    <header>
+        <h1>Flashcard Từ Vựng Tiếng Nhật</h1>
+        <button id="shuffle-btn">Xáo trộn</button>
+    </header>
+
+    <div class="flashcard-container">
+        <!-- Card 1 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2014/04/03/00/41/apple-309224_640.png" alt="Táo">
+                    <p>Táo</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 林檎</p>
+                    <p>ひらがな: りんご</p>
+                    <p>例文: この林檎は甘いです。</p>
+                    <p>Nghĩa: Quả táo này ngọt.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_640.jpg" alt="Cơm">
+                    <p>Cơm</p>
+                </div>
+                <div class="back">
+                    <p>漢字: ご飯</p>
+                    <p>ひらがな: ごはん</p>
+                    <p>例文: 毎朝ご飯を食べます。</p>
+                    <p>Nghĩa: Mỗi sáng tôi ăn cơm.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2014/12/11/02/55/cereals-563796_640.jpg" alt="Sữa">
+                    <p>Sữa</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 牛乳</p>
+                    <p>ひらがな: ぎゅうにゅう</p>
+                    <p>例文: 牛乳は健康に良いです。</p>
+                    <p>Nghĩa: Sữa tốt cho sức khỏe.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2018/02/25/07/15/dog-3179756_640.jpg" alt="Chó">
+                    <p>Chó</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 犬</p>
+                    <p>ひらがな: いぬ</p>
+                    <p>例文: 私の犬はとても賢いです。</p>
+                    <p>Nghĩa: Con chó của tôi rất thông minh.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_640.jpg" alt="Mèo">
+                    <p>Mèo</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 猫</p>
+                    <p>ひらがな: ねこ</p>
+                    <p>例文: あの猫は私の家に来ます。</p>
+                    <p>Nghĩa: Con mèo đó đến nhà tôi.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg" alt="Hoa">
+                    <p>Hoa</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 花</p>
+                    <p>ひらがな: はな</p>
+                    <p>例文: 庭に美しい花が咲いています。</p>
+                    <p>Nghĩa: Những bông hoa đẹp nở trong vườn.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_640.jpg" alt="Sách">
+                    <p>Sách</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 本</p>
+                    <p>ひらがな: ほん</p>
+                    <p>例文: この本はとても面白いです。</p>
+                    <p>Nghĩa: Cuốn sách này rất thú vị.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2014/08/29/14/53/pen-430376_640.jpg" alt="Bút">
+                    <p>Bút</p>
+                </div>
+                <div class="back">
+                    <p>漢字: ペン</p>
+                    <p>ひらがな: ぺん</p>
+                    <p>例文: ペンで手紙を書きます。</p>
+                    <p>Nghĩa: Tôi viết thư bằng bút.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/15/14/22/conference-room-768441_640.jpg" alt="Trường học">
+                    <p>Trường học</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 学校</p>
+                    <p>ひらがな: がっこう</p>
+                    <p>例文: 私は毎日学校に行きます。</p>
+                    <p>Nghĩa: Mỗi ngày tôi đi đến trường.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2014/09/20/13/52/board-453758_640.jpg" alt="Bảng">
+                    <p>Bảng</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 黒板</p>
+                    <p>ひらがな: こくばん</p>
+                    <p>例文: 先生は黒板に字を書きます。</p>
+                    <p>Nghĩa: Giáo viên viết chữ lên bảng.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/02/10/23/writing-828911_640.jpg" alt="Viết">
+                    <p>Viết</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 書く</p>
+                    <p>ひらがな: かく</p>
+                    <p>例文: 私は日記を書きます。</p>
+                    <p>Nghĩa: Tôi viết nhật ký.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_640.jpg" alt="Đọc">
+                    <p>Đọc</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 読む</p>
+                    <p>ひらがな: よむ</p>
+                    <p>例文: 新聞を読みます。</p>
+                    <p>Nghĩa: Tôi đọc báo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/31/15/07/coffee-791902_640.jpg" alt="Cà phê">
+                    <p>Cà phê</p>
+                </div>
+                <div class="back">
+                    <p>漢字: コーヒー</p>
+                    <p>ひらがな: こーひー</p>
+                    <p>例文: 朝にコーヒーを飲みます。</p>
+                    <p>Nghĩa: Tôi uống cà phê vào buổi sáng.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_640.jpg" alt="Bánh">
+                    <p>Bánh</p>
+                </div>
+                <div class="back">
+                    <p>漢字: ケーキ</p>
+                    <p>ひらがな: けーき</p>
+                    <p>例文: 誕生日にケーキを食べます。</p>
+                    <p>Nghĩa: Tôi ăn bánh vào ngày sinh nhật.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/41/apple-1868496_640.jpg" alt="Nước">
+                    <p>Nước</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 水</p>
+                    <p>ひらがな: みず</p>
+                    <p>例文: 水をたくさん飲んでください。</p>
+                    <p>Nghĩa: Hãy uống nhiều nước.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_640.jpg" alt="Hamburger">
+                    <p>Hamburger</p>
+                </div>
+                <div class="back">
+                    <p>漢字: ハンバーガー</p>
+                    <p>ひらがな: はんばーがー</p>
+                    <p>例文: ハンバーガーが好きです。</p>
+                    <p>Nghĩa: Tôi thích hamburger.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/05/20/02/appetite-1238459_640.jpg" alt="Pizza">
+                    <p>Pizza</p>
+                </div>
+                <div class="back">
+                    <p>漢字: ピザ</p>
+                    <p>ひらがな: ぴざ</p>
+                    <p>例文: ピザを注文しました。</p>
+                    <p>Nghĩa: Tôi đã đặt pizza.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/salad-1238220_640.jpg" alt="Salad">
+                    <p>Salad</p>
+                </div>
+                <div class="back">
+                    <p>漢字: サラダ</p>
+                    <p>ひらがな: さらだ</p>
+                    <p>例文: サラダは体に良いです。</p>
+                    <p>Nghĩa: Salad tốt cho cơ thể.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971556_640.jpg" alt="Kem">
+                    <p>Kem</p>
+                </div>
+                <div class="back">
+                    <p>漢字: アイスクリーム</p>
+                    <p>ひらがな: あいすくりーむ</p>
+                    <p>例文: 夏にアイスクリームを食べます。</p>
+                    <p>Nghĩa: Tôi ăn kem vào mùa hè.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/athletes-1867185_640.jpg" alt="Chạy">
+                    <p>Chạy</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 走る</p>
+                    <p>ひらがな: はしる</p>
+                    <p>例文: 毎朝公園で走ります。</p>
+                    <p>Nghĩa: Mỗi sáng tôi chạy trong công viên.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_640.jpg" alt="Bơi">
+                    <p>Bơi</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 泳ぐ</p>
+                    <p>ひらがな: およぐ</p>
+                    <p>例文: 夏に海で泳ぎます。</p>
+                    <p>Nghĩa: Tôi bơi ở biển vào mùa hè.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/01/20/06/city-2567670_640.jpg" alt="Thành phố">
+                    <p>Thành phố</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 都市</p>
+                    <p>ひらがな: とし</p>
+                    <p>例文: 東京は大きな都市です。</p>
+                    <p>Nghĩa: Tokyo là một thành phố lớn.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_640.jpg" alt="Biển">
+                    <p>Biển</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 海</p>
+                    <p>ひらがな: うみ</p>
+                    <p>例文: 海はとてもきれいです。</p>
+                    <p>Nghĩa: Biển rất đẹp.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 24 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989_640.jpg" alt="Núi">
+                    <p>Núi</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 山</p>
+                    <p>ひらがな: やま</p>
+                    <p>例文: 富士山は日本で一番高い山です。</p>
+                    <p>Nghĩa: Núi Phú Sĩ là ngọn núi cao nhất Nhật Bản.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 25 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/17/adult-1868750_640.jpg" alt="Công viên">
+                    <p>Công viên</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 公園</p>
+                    <p>ひらがな: こうえん</p>
+                    <p>例文: 公園で子供が遊んでいます。</p>
+                    <p>Nghĩa: Trẻ con đang chơi trong công viên.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 26 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/15/14/50/home-office-768725_640.jpg" alt="Nhà">
+                    <p>Nhà</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 家</p>
+                    <p>ひらがな: いえ</p>
+                    <p>例文: 私の家は駅から近いです。</p>
+                    <p>Nghĩa: Nhà tôi gần nhà ga.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 27 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2014/07/31/23/37/motorbike-407186_640.jpg" alt="Xe máy">
+                    <p>Xe máy</p>
+                </div>
+                <div class="back">
+                    <p>漢字: バイク</p>
+                    <p>ひらがな: ばいく</p>
+                    <p>例文: バイクで通勤します。</p>
+                    <p>Nghĩa: Tôi đi làm bằng xe máy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 28 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/13/11/34/car-157609_640.png" alt="Ô tô">
+                    <p>Ô tô</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 車</p>
+                    <p>ひらがな: くるま</p>
+                    <p>例文: 新しい車を買いました。</p>
+                    <p>Nghĩa: Tôi đã mua một chiếc ô tô mới.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 29 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_640.jpg" alt="Xe đạp">
+                    <p>Xe đạp</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 自転車</p>
+                    <p>ひらがな: じてんしゃ</p>
+                    <p>例文: 自転車で学校へ行きます。</p>
+                    <p>Nghĩa: Tôi đi học bằng xe đạp.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 30 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/02/10/27/train-828928_640.jpg" alt="Tàu hỏa">
+                    <p>Tàu hỏa</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 電車</p>
+                    <p>ひらがな: でんしゃ</p>
+                    <p>例文: 電車で東京に行きます。</p>
+                    <p>Nghĩa: Tôi đi Tokyo bằng tàu hỏa.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 31 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/13/11/34/aircraft-157825_640.png" alt="Máy bay">
+                    <p>Máy bay</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 飛行機</p>
+                    <p>ひらがな: ひこうき</p>
+                    <p>例文: 飛行機で海外旅行に行きます。</p>
+                    <p>Nghĩa: Tôi đi du lịch nước ngoài bằng máy bay.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 32 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/36/adult-1868753_640.jpg" alt="Bệnh viện">
+                    <p>Bệnh viện</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 病院</p>
+                    <p>ひらがな: びょういん</p>
+                    <p>例文: 病院で働いています。</p>
+                    <p>Nghĩa: Tôi làm việc ở bệnh viện.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 33 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/02/10/23/writing-828912_640.jpg" alt="Bác sĩ">
+                    <p>Bác sĩ</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 医者</p>
+                    <p>ひらがな: いしゃ</p>
+                    <p>例文: 医者になりたいです。</p>
+                    <p>Nghĩa: Tôi muốn trở thành bác sĩ.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 34 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/31/14/26/blue-2024619_640.png" alt="Thuốc">
+                    <p>Thuốc</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 薬</p>
+                    <p>ひらがな: くすり</p>
+                    <p>例文: 薬を飲んでください。</p>
+                    <p>Nghĩa: Hãy uống thuốc.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 35 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/56/athletes-1867188_640.jpg" alt="Khỏe mạnh">
+                    <p>Khỏe mạnh</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 健康</p>
+                    <p>ひらがな: けんこう</p>
+                    <p>例文: 健康が一番大切です。</p>
+                    <p>Nghĩa: Sức khỏe là quan trọng nhất.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 36 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/02/10/23/writing-828913_640.jpg" alt="Bệnh">
+                    <p>Bệnh</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 病気</p>
+                    <p>ひらがな: びょうき</p>
+                    <p>例文: 病気で学校を休みました。</p>
+                    <p>Nghĩa: Tôi nghỉ học vì bệnh.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 37 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/36/adult-1868754_640.jpg" alt="Tiền">
+                    <p>Tiền</p>
+                </div>
+                <div class="back">
+                    <p>漢字: お金</p>
+                    <p>ひらがな: おかね</p>
+                    <p>例文: お金を貯金しています。</p>
+                    <p>Nghĩa: Tôi đang tiết kiệm tiền.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 38 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/44/buildings-1851249_640.jpg" alt="Ngân hàng">
+                    <p>Ngân hàng</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 銀行</p>
+                    <p>ひらがな: ぎんこう</p>
+                    <p>例文: 銀行でお金を下ろします。</p>
+                    <p>Nghĩa: Tôi rút tiền ở ngân hàng.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 39 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/44/atm-1851261_640.jpg" alt="Thẻ ATM">
+                    <p>Thẻ ATM</p>
+                </div>
+                <div class="back">
+                    <p>漢字: キャッシュカード</p>
+                    <p>ひらがな: きゃっしゅかーど</p>
+                    <p>例文: キャッシュカードを忘れました。</p>
+                    <p>Nghĩa: Tôi quên thẻ ATM.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 40 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/44/purse-1851247_640.jpg" alt="Ví">
+                    <p>Ví</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 財布</p>
+                    <p>ひらがな: さいふ</p>
+                    <p>例文: 財布を落としました。</p>
+                    <p>Nghĩa: Tôi đánh rơi ví.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 41 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/36/adult-1868755_640.jpg" alt="Mua sắm">
+                    <p>Mua sắm</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 買い物</p>
+                    <p>ひらがな: かいもの</p>
+                    <p>例文: 週末に買い物に行きます。</p>
+                    <p>Nghĩa: Cuối tuần tôi đi mua sắm.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 42 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/44/supermarket-1851250_640.jpg" alt="Siêu thị">
+                    <p>Siêu thị</p>
+                </div>
+                <div class="back">
+                    <p>漢字: スーパー</p>
+                    <p>ひらがな: すーぱー</p>
+                    <p>例文: スーパーで野菜を買います。</p>
+                    <p>Nghĩa: Tôi mua rau ở siêu thị.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 43 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/36/adult-1868756_640.jpg" alt="Cửa hàng">
+                    <p>Cửa hàng</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 店</p>
+                    <p>ひらがな: みせ</p>
+                    <p>例文: あの店は安いです。</p>
+                    <p>Nghĩa: Cửa hàng đó rẻ.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 44 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/36/adult-1868757_640.jpg" alt="Giá">
+                    <p>Giá</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 値段</p>
+                    <p>ひらがな: ねだん</p>
+                    <p>例文: この値段は高いです。</p>
+                    <p>Nghĩa: Giá này đắt.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 45 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/36/adult-1868758_640.jpg" alt="Rẻ">
+                    <p>Rẻ</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 安い</p>
+                    <p>ひらがな: やすい</p>
+                    <p>例文: この店は安いです。</p>
+                    <p>Nghĩa: Cửa hàng này rẻ.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 46 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/36/adult-1868759_640.jpg" alt="Đắt">
+                    <p>Đắt</p>
+                </div>
+                <div class="back">
+                    <p>漢字: 高い</p>
+                    <p>ひらがな: たかい</p>
+                    <p>例文: この時計は高いです。</p>
+                    <p>Nghĩa: Chiếc đồng hồ này đắt.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 47 -->
+        <div class="flashcard">
+            <div class="card">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/08/36/adult-1868760_640.jpg" alt="Giảm
