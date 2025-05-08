@@ -1,4 +1,3 @@
-<!-- flashcard1.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -13,14 +12,14 @@
             <button>⬅ Quay lại</button>
         </a>
         <h1>Thẻ Flashcard - Từ vựng bài 1</h1>
-    </header>
+    </。其中</header>
 
     <div class="flashcard-container">
         <!-- Thẻ Flashcard 1 -->
         <div class="flashcard">
             <div class="card">
                 <div class="front">
-                    <img src="猫.png" alt="Con mèo">
+                    <img src="cat.png" alt="Con mèo">
                     <p>Con mèo</p>
                 </div>
                 <div class="back">
@@ -36,7 +35,7 @@
         <div class="flashcard">
             <div class="card">
                 <div class="front">
-                    <img src="猫.png" alt="Hình ảnh">
+                    <img src="images/girl_reading.png" alt="Cô gái đang đọc sách">
                     <p>Câu tiếng Việt: Cô gái đang đọc sách.</p>
                 </div>
                 <div class="back">
@@ -50,5 +49,16 @@
         <!-- Tiếp tục thêm 58 thẻ Flashcard khác... -->
 
     </div>
+<script>
+    // Xóa script bảo mật không cần thiết
+    document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', () => {
+            card.querySelector('.card').style.transform = 
+                card.querySelector('.card').style.transform === 'rotateY(180deg)' 
+                ? 'rotateY(0deg)' 
+                : 'rotateY(180deg)';
+        });
+    });
+</script>
 </body>
 </html>
