@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-/* Header chung cho tất cả các trang */
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -41,10 +41,7 @@ header button:hover {
     background-color: #27ae60;
 }
 
-/* ==============================
-   Grid Container chung
-   ============================== */
-
+/* Grid Container */
 .grid-container,
 .flashcard-container,
 .exercise-grid {
@@ -55,23 +52,17 @@ header button:hover {
     margin: 0 auto;
 }
 
-/* -----------------------------
-   1. Trang kỹ năng (index.html)
-   ----------------------------- */
-
-/* Mặc định: 3 cột trên máy tính */
+/* Trang chính */
 .grid-container {
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* iPad: 2 cột */
 @media (min-width: 768px) and (max-width: 1024px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Điện thoại: 1 cột */
 @media (max-width: 767px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -104,30 +95,23 @@ header button:hover {
     color: #333;
 }
 
-/* -----------------------------
-   2. Trang bài tập (phann1.html...)
-   ----------------------------- */
-
-/* Máy tính: 5 cột */
+/* Trang bài tập */
 .exercise-grid {
     grid-template-columns: repeat(5, 1fr);
 }
 
-/* Tablet: 4 cột */
 @media (max-width: 1024px) {
     .exercise-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* Điện thoại lớn: 3 cột */
 @media (max-width: 768px) {
     .exercise-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Điện thoại nhỏ: 2 cột */
 @media (max-width: 480px) {
     .exercise-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -135,7 +119,7 @@ header button:hover {
 }
 
 .exercise {
-    background-color: #2ecc71; /* Màu xanh lá */
+    background-color: #2ecc71;
     color: white;
     text-align: center;
     padding: 10px;
@@ -148,30 +132,23 @@ header button:hover {
     background-color: #27ae60;
 }
 
-/* -----------------------------
-   3. Trang Flashcard (flashcard1.html...)
-   ----------------------------- */
-
-/* Mặc định: 3 cột */
+/* Flashcard */
 .flashcard-container {
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* iPad: 2 cột */
 @media (min-width: 768px) and (max-width: 1024px) {
     .flashcard-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Điện thoại: 1 cột */
 @media (max-width: 767px) {
     .flashcard-container {
         grid-template-columns: 1fr;
     }
 }
 
-/* Định dạng Flashcard */
 .flashcard {
     perspective: 1000px;
     width: 100%;
@@ -190,7 +167,7 @@ header button:hover {
     transform-style: preserve-3d;
 }
 
-.card:hover {
+.flipped {
     transform: rotateY(180deg);
 }
 
@@ -221,4 +198,8 @@ header button:hover {
     font-size: 14px;
     line-height: 1.4;
     color: #333;
+}
+
+.back {
+    transform: rotateY(180deg);
 }
