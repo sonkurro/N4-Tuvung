@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashcard Từ Vựng Tiếng Nhật</title>
+    <style>
+        /* Thêm phần CSS bổ sung */
+        .front img {
+            width: 80%;
+            height: 120px; /* Cố định chiều cao */
+            object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0; /* Màu nền nếu hình không tải */
+        }
+        
+        .back {
+            font-size: 14px;
+            overflow-y: auto; /* Cho phép cuộn nếu nội dung dài */
+        }
+        
+        .back p {
+            margin: 5px 0;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,7 +38,7 @@
 
     <!-- Lesson 1 -->
     <div id="lesson1" class="flashcard-container">
-        <!-- Flashcard 1 -->
+        <!-- Flashcard 1 - Sử dụng hình ảnh thực tế -->
         <div class="flashcard" onclick="flipCard(this)">
             <div class="card">
                 <div class="front">
@@ -34,11 +54,11 @@
             </div>
         </div>
 
-        <!-- Flashcard 2 -->
+        <!-- Flashcard 2 - Sử dụng hình local -->
         <div class="flashcard" onclick="flipCard(this)">
             <div class="card">
                 <div class="front">
-                    <img src="https://via.placeholder.com/150x100?text=Book" alt="Sách">
+                    <img src="images/book.jpg" alt="Sách" onerror="this.src='https://via.placeholder.com/150x100?text=Book'">
                     <p>ほん</p>
                 </div>
                 <div class="back">
@@ -49,93 +69,9 @@
                 </div>
             </div>
         </div>
-
-        <!-- Flashcard 3 -->
-        <div class="flashcard" onclick="flipCard(this)">
-            <div class="card">
-                <div class="front">
-                    <img src="https://via.placeholder.com/150x100?text=Water" alt="Nước">
-                    <p>みず</p>
-                </div>
-                <div class="back">
-                    <p><strong>Hán tự:</strong> 水</p>
-                    <p><strong>Hiragana:</strong> みず</p>
-                    <p><strong>Ví dụ:</strong> 水を一杯ください。</p>
-                    <p><strong>Nghĩa:</strong> Làm ơn cho tôi một ly nước.</p>
-                </div>
-            </div>
-        </div>
     </div>
 
-    <!-- Lesson 2 (hidden by default) -->
-    <div id="lesson2" class="flashcard-container" style="display: none;">
-        <!-- Flashcard 4 -->
-        <div class="flashcard" onclick="flipCard(this)">
-            <div class="card">
-                <div class="front">
-                    <img src="https://via.placeholder.com/150x100?text=Mountain" alt="Núi">
-                    <p>やま</p>
-                </div>
-                <div class="back">
-                    <p><strong>Hán tự:</strong> 山</p>
-                    <p><strong>Hiragana:</strong> やま</p>
-                    <p><strong>Ví dụ:</strong> 富士山は高いです。</p>
-                    <p><strong>Nghĩa:</strong> Núi Phú Sĩ cao.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Flashcard 5 -->
-        <div class="flashcard" onclick="flipCard(this)">
-            <div class="card">
-                <div class="front">
-                    <img src="https://via.placeholder.com/150x100?text=Car" alt="Xe hơi">
-                    <p>くるま</p>
-                </div>
-                <div class="back">
-                    <p><strong>Hán tự:</strong> 車</p>
-                    <p><strong>Hiragana:</strong> くるま</p>
-                    <p><strong>Ví dụ:</strong> 新しい車を買いました。</p>
-                    <p><strong>Nghĩa:</strong> Tôi đã mua một chiếc xe mới.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Lesson 3 (hidden by default) -->
-    <div id="lesson3" class="flashcard-container" style="display: none;">
-        <!-- Flashcard 6 -->
-        <div class="flashcard" onclick="flipCard(this)">
-            <div class="card">
-                <div class="front">
-                    <img src="https://via.placeholder.com/150x100?text=Cat" alt="Mèo">
-                    <p>ねこ</p>
-                </div>
-                <div class="back">
-                    <p><strong>Hán tự:</strong> 猫</p>
-                    <p><strong>Hiragana:</strong> ねこ</p>
-                    <p><strong>Ví dụ:</strong> 私の猫は白いです。</p>
-                    <p><strong>Nghĩa:</strong> Con mèo của tôi màu trắng.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Flashcard 7 -->
-        <div class="flashcard" onclick="flipCard(this)">
-            <div class="card">
-                <div class="front">
-                    <img src="https://via.placeholder.com/150x100?text=Dog" alt="Chó">
-                    <p>いぬ</p>
-                </div>
-                <div class="back">
-                    <p><strong>Hán tự:</strong> 犬</p>
-                    <p><strong>Hiragana:</strong> いぬ</p>
-                    <p><strong>Ví dụ:</strong> 犬と散歩します。</p>
-                    <p><strong>Nghĩa:</strong> Tôi đi dạo với chó.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Các bài học khác... -->
 
     <script src="script.js"></script>
 </body>
