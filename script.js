@@ -1,16 +1,27 @@
 function flipCard(card) {
-    card.classList.toggle('flipped');
+    const innerCard = card.querySelector('.card');
+    innerCard.classList.toggle('flipped');
 }
 
 function showLesson(lessonNumber) {
-    // Ẩn tất cả các bài học
     document.querySelectorAll('.flashcard-container').forEach(lesson => {
         lesson.style.display = 'none';
     });
-
-    // Hiển thị bài học được chọn
-    document.getElementById(`lesson${lessonNumber}`).style.display = 'grid'; // Sửa thành 'grid'
+    
+    const lessonToShow = document.getElementById(`lesson${lessonNumber}`);
+    if (lessonToShow) {
+        lessonToShow.style.display = 'grid';
+    }
 }
 
-// Mặc định hiển thị bài học 1
-showLesson(1);
+// Xử lý tham số URL nếu có
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const lessonParam = urlParams.get('lesson');
+    
+    if (lessonParam) {
+        showLesson(parseInt(lessonParam));
+    } else {
+        showLesson(1);
+    }
+});
